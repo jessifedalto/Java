@@ -1,0 +1,42 @@
+ArrayList está na ementa;
+
+Estrutura de dados também;
+
+Classe genérica: pilha
+
+Selection sort: procura o menor e coloca, com 5 números, faz cerca de 15 operações, se fossem 10, iam ser 55 operações = 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1, (n² + n)/2. Notação bio em algoritmo;
+
+Para ordenar precido fazer até n loops para verificar a ordem, a quantidade de operações é proporcional a quantidade de elementos da lista.
+
+Merge sort: algoritmo um pouco mais complicado, 10 elementos de um vetor, separo ele em dois e ordeno e junto eles em um vetor só, ele é ordem de n. Para dar o merge ele compara os elementos que estão na mesma posição e coloca o menor. Separa em outro merge sort cada um dos 2 arrays já existentes. n dividido por k vezes, até que cada elemento seja basicamente de um tamanho único. n/2^k = 1;
+n = 2^k
+ln = log e
+log = log 10
+lg = log 2
+Ordem de n lg n;
+
+
+Operações LINKED LIST
+
+- add(E)
+- add(int, E)
+- addFirst(E)
+- addLast(E)
+- get (int)
+- getFirst()
+- getLast()
+- remove(int)
+- removeFirst()
+- removeLast()
+- size()
+
+
+Priority Queue(Comparator<E>):
+
+- Função para adicionar elementos e remover elementos
+- Se mantem o tempo todo ordenada
+- quando for criada precisa receber um comparator
+- tempo de ordenação é instantâneo;
+- add(E)
+- peek(): E
+- poll(): E é o pop

@@ -1,0 +1,27 @@
+IntegerArrayList
+- métodos:
+	get(indice): Integer
+	set(indice, Integer) : void - altera o valor naquele indice
+	add(Integer): void
+	constains(Integer): bool
+	Size(): int
+	clear(): void
+	indexOf(Integer): int
+	is Empty(): boolean
+	clone(): IntegerArrayList
+	remove(int): Integer -- passa o indice e remove da lista retornando o valor que tava naquela posição
+	remove(Integer): boolean remove um numero em específico da lista
+	sort():void
+	fazer funções extra também
+
+
+MÍNIMO: add, size, get, set, clear, isEmpty, contains, indexOf, clone, remove, remove, sort
+
+lista com referência para um vetor, para aumentar tem um ponteiro de um vetor, quando o vetor ficar cheio, vai criar um outro vetor com o dobro do tamanho original, e vai copiar os valores da lista original para essa lista nova. Dizer que o ponteiro antigo é inválido e apontar para o vetor novo.
+
+	
+atributo de tamanho e atributo de lista
+
+Integer data = new
+
+Integer[novo_tamanho}
