@@ -1,0 +1,48 @@
+Tipagem: estática, dinâmica.
+
+- Abstração: capacidade de representar algo do mundo real.
+
+- Encapsulamento: capacidade de esconder infromação e mostrá-lo de forma pública.
+
+- Herança: classe mãe, classe filha herda tudo. O que é público existe tanto na classe mãe, quanto na classe filha, privado
+eu não tenho acesso também na classe filha. Protected: ela é privada, nada fora da classe consegue ver aquele membro, mas a 
+classe filha consegue, não aparece para o usuário final, seria um método auxiliar. Pode herdar e modificar o comportamento dela, 
+@Override. Função get é bom que seja abstrato, a classe mãe fala: não sei como vai ser o get, você usa ele e o modifica aí.
+Classe abstrata não pode ser instanciada, só serve de base para outras classes, é o modelo.
+
+- Ordem de complexidade: O(n), O(n²). O(n): algoritmo demora uma quantidade de segundos, dependendo da entrada. Ele é ordem de n, 
+onde existe um valor k para todo j > k (F(j) é proporcional a n) (F(j) < xj). O (n²), quadruplica a quantidade de tempo.
+
+- Coleções vistas: 
+Ordenação é O(n lg n)
+	- ArrayList: add O(1) ou O(n), quando dobra o vetor dependendo da quantidade de valores adicionados é O(n), 
+remove O(n), bastante remoção, listas que estão mudando rapidamente não é recomendado utilizar, get O(1).
+	- LinkedList: add O(1), remove O(1), consegue remover de forma mais rápida, get O(n). 
+Objeto que guarda o estado da busca. Ler uma lista só com For é O(n²)
+	- Stack (pilha): pode ser implementada com linkedList, tudo ordem de 1 aplicada a situações especefícas.
+	- Queue (fila): pode ser implementada com linkedList, tudo ordem de 1 aplicada a situações especefícas.
+	- PriorityQueue(): quem tem mais importância sai primeiro, gasto na inserção dele, add O(n), remoção e leitura 
+rápidas. Achar o maior valor é O(n).
+	- HashSet: pega os dados, gera um código e coloca em um array, encontra dados em ordem de 1. Varias listas pequenas 
+em um vetor muito grande. Gasta muita memória, mais do que uma lista normal. Adição custosa, pois precisa aumentar o vetor. Ótimo
+para procurar dados.
+	- HashMap: ideia de dicionário em python, chave: valor, muito rápido para acessar o valor. 
+
+- Iterador: auxiliar que começa apontando para um elemento e guarda a posição que eu estou, quando passo o comando ele vai para o próximo.
+Forma de padronizar, java e C#, essa estrututa é utilizada para padronizar a forma como ler as listas. Muita flexibilidade
+para o programador. 
+
+Uso da herança, identifico um método que pode ser usado várias vezes por outras classes e faço uma função abstrata. 
+
+Qual a diferença de herdar de uma classe ou de uma interface:
+- Classe só pode herdar de uma classe, e interface pode ter várias em uma classe. A classe permite implementações e pode inserir dados,
+comprometendo a sua classe filha a ter dados. Interface não pode ter váriaveis ocultas, métodos privados, é como se fosse um contrato,
+geralmente são 2/4 métodos (princípio da segregação de interfaces), interface padroniza o iterador, pode ser muito mais coisas e atender
+as funcionalidades. Iterable ela é pontual, pode fazer coleção, classe, pode ter função de iterador de alunos. Classe define o que você é,
+interface é como um conjunto de opções, pode ser isso, pode fazer aquilo. Interface não pode ter atributos, só métodos, não pode comprometer 
+as classes filhas com dados que você não pode ter e nem esperava. Pode ter uma lista de interfaces. 
+
+- Polimorfismo: quando uma entidade pode se comportar de diferentes formas dependendo da situação. AddRoock: overload, sobrecarga, funções com vários 
+parametros e com o mesmo nome. Genericos. Variável da classe mãe, vai para classe filha, e depende do que está na minha classe filha vou mudar a variável.
+Posso usar uma variável da classe mãe e obter um objeto diferente na classe filha (Variância). Quando chamo as funções da classe mãe, difere o retorno,
+devido a variável.
